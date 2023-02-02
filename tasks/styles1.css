@@ -1,0 +1,77 @@
+.aa{
+  display: flex;
+  flex-direction: row;
+ }
+.a {
+  background-color: blue;
+  width: 70%;
+  height: 120px;
+  margin: 10px;
+}
+.b{
+  background-color: darksalmon;
+  width: 30%;
+  height: 120px;
+  margin: 10px;
+ }
+ 
+.c{
+  background-color: rosybrown;
+  width: 20%;
+  height: 110px;
+  margin: 10px;
+}
+.d{
+  background-color: lightsteelblue;
+  width: 30%;
+  height: 110px;
+  margin: 10px;
+}
+.e{
+  background-color: limegreen;
+  width: 50%;
+  height: 110px;
+  margin: 10px;
+}
+.f{
+  background-color: burlywood;
+  width: 98%;
+  height: 100px;
+  margin: 10px;
+}
+.g{
+  background-color: darkgreen;
+  width: 50%;
+  height: 90px;
+  margin: 10px;
+}
+.h{
+  background-color: navy;
+  width: 50%;
+  height: 90px;
+  margin: 10px;
+}
+.i{
+  background-color: mediumvioletred;
+  width: 25%;
+  height: 70px;
+  margin: 10px;
+}
+.j{
+  background-color: slateblue;
+  width: 25%;
+  height: 70px;
+  margin: 10px;
+}
+.k{
+  background-color: rgb(123, 156, 228);
+  width: 25%;
+  height: 70px;
+  margin: 10px;
+}
+.l{
+  background-color: rgb(178, 19, 165);
+  width: 25%;
+  height: 70px;
+  margin: 10px;
+}
