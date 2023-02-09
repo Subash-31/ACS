@@ -1,0 +1,145 @@
+
+body {  
+  font-family: 'Roboto Condensed', sans-serif;  
+  color: #262626;  
+  margin: 5% 0;  
+ background-image: url(https://media.istockphoto.com/id/1249219777/photo/shopping-online-concept-parcel-or-paper-cartons-with-a-shopping-cart-logo-in-a-trolley-on-a.jpg?b=1&s=612x612&w=0&k=20&c=Z3RsrcQm2G19uOggBLXRtJZ_2mwvHyJikV4Ib3mqgd0=);
+background-image: no repeat;
+background-size: 100%;
+}  
+.container {  
+  width: 100%;  
+  padding-right: 15px;  
+  padding-left: 15px;  
+  margin-right: auto;  
+  margin-left: auto;  
+}  
+.d-flex {  
+  display: flex;  
+  flex-direction: row;  
+  background: #f6f6f6;  
+  border-radius: 0 0 5px 5px;  
+  padding: 25px;  
+  margin:0 25%;
+}  
+form {  
+  flex: 4; 
+  opacity: 80%;
+
+}  
+.Yorder {  
+  flex: 2;  
+  opacity: 80%;
+
+}  
+h1{  
+  text-align: center;
+  color:red;
+}  
+h2 {  
+  margin: 0;  
+  padding-left: 15px;   
+}  
+.required {  
+  color: red;  
+}  
+label {  
+  display: block;  
+  margin: 15px;  
+}  
+label>span {  
+  float: left;  
+  width: 25%;  
+  margin-top: 12px;  
+  padding-right: 10px;  
+}  
+input[type="email"]  
+{  
+  width: 70%;  
+  height: 30px;  
+  padding: 5px 10px;  
+  margin-bottom: 10px;  
+  border: 1px solid #dadada;  
+  color: #888;  
+}  
+select  
+{  
+  width: 70%;  
+  height: 30px;  
+  padding: 5px 10px;  
+  margin-bottom: 10px;  
+  border: 1px solid #dadada;  
+  color: #888;  
+}  
+input[type="text"] {  
+  width: 70%;  
+  height: 30px;  
+  padding: 5px 10px;  
+  margin-bottom: 10px;  
+  border: 1px solid #dadada;  
+  color: #888;  
+}  
+input[type="tel"]   
+{  
+  width: 70%;  
+  height: 30px;  
+  padding: 5px 10px;  
+  margin-bottom: 10px;  
+  border: 1px solid #dadada;  
+  color: #888;  
+}  
+select {  
+  width: 72%;  
+  height: 45px;  
+  padding: 5px 10px;  
+  margin-bottom: 10px;  
+}  
+.Yorder {  
+  margin-top: 15px;  
+  height: 600px;  
+  padding: 20px;  
+  border: 1px solid #dadada;  
+}   
+th {  
+  border-bottom: 1px solid #dadada;  
+  padding: 10px 0;  
+}  
+tr>td:nth-child(1) {  
+  text-align: left;  
+  color: #2d2d2a;  
+}  
+tr>td:nth-child(2) {  
+  text-align: right;  
+  color: #52ad9c;  
+}  
+td {  
+  border-bottom: 1px solid #dadada;  
+  padding: 25px 25px 25px 0;  
+}  
+p {  
+  display: block;  
+  color: #888;  
+  margin: 0;  
+  padding-left: 25px;  
+}  
+.Yorder>div {  
+  padding: 15px 0;   
+}  
+button {  
+  width: 20%;  
+  margin-top: 10px;  
+  padding: 10px;  
+  border: none;  
+  border-radius: 30px;  
+  background: #45b46a;  
+  color: #fff;  
+  font-size: 15px;  
+  font-weight: bold;  
+  text-align: center;
+  margin-left:40%;
+  display:block;
+}  
+button:hover {  
+  cursor: pointer;  
+  background: #3033c0;  
+}  

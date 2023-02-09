@@ -1,0 +1,20 @@
+table{
+    border: 3px solid black;
+    margin:0 auto;
+    margin-top:50px;
+}
+th,td{
+    border: 1px solid black;
+}
+.yellow{
+  background-color: lightgoldenrodyellow;
+}
+.vio{
+  background-color: lightskyblue;
+}
+.green{
+   background-color: lightgreen;
+}
+tr td{
+    text-align: center;
+}
