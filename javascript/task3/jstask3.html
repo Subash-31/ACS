@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jstask3</title>
+    <style>
+        body{
+            background-color: darkgrey;
+        }
+    </style>
+<script>
+    function showText() {
+      var txt= document.getElementById("txt").value;
+      document.getElementById("showDiv").innerHTML = txt;
+      alert(txt);
+    }
+  </script>
+</head>
+<body>
+  <input type="text" id="txt">
+  <button onclick="showText()">press ;-</button>
+  <div id="showDiv"></div>
+</body>
+</html>

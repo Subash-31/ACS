@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <ul>
+        <li onclick="cc(this)">a</li>
+        <li onclick="cc(this)">E</li>
+        <li onclick="cc(this)">I</li>
+        <li onclick="cc(this)">O</li>
+        <li onclick="cc(this)">U</li>
+        <li onclick="cc(this)">u</li>
+        <li onclick="cc(this)">a</li>
+        <li onclick="cc(this)">e</li>
+        <li onclick="cc(this)">o</li>
+        <li onclick="cc(this)">i</li>
+        <li onclick="cc(this)">v</li>
+        <li onclick="cc(this)">s</li>
+        <li onclick="cc(this)">d</li>
+        <li onclick="cc(this)">k</li>
+      </ul>
+    <script>
+        function cc(list) {
+          var value = list.innerHTML[0];
+          if (value == 'a' || value == 'e' || value == 'i' || value == 'o' || value == 'u' || value == 'A' || value == 'E' || value == 'O' || value =='U' || value == 'I' ) {
+            list.style.backgroundColor = "red";
+          } else {
+            list.style.backgroundColor = "green";
+          }
+        }
+        </script>
+
+</body>
+</html>
+
