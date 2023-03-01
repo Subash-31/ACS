@@ -79,9 +79,22 @@ input {
     width: 768px;
     max-width: 100%;
     min-height: 480px;
+
     
 }
-
+.first{
+    background-color: #ee5125;
+    width:30%;
+    height: 50%;
+}
+.second{
+    background-color: #0cc509;
+    width:70%;
+    height: 700px;
+    margin-top:0;
+    margin-left:80%;
+    z-index:-2;
+}
 .form-container {
     position: absolute;
     top: 0;
