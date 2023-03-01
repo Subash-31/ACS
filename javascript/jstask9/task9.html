@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task9</title>
+    <script>  
+        function keyPress() {
+            var value1 = document.getElementById("value1");
+            var s = value1.value;
+        
+            var lblValue = document.getElementById("value2");
+            value2.innerText = "The text box contains: " + s; 
+        }
+        </script>
+</head>
+<body>
+<input id="value1" type="text" onKeyPress="keyPress()"><br>
+<p>
+<span id="value2">The text box contains: </span>
+</p>
+</body>
+</html>

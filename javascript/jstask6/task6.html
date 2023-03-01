@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+     
+        body {
+            background-color: #f4efef;
+           
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="color-button">Change color</button>
+    <p id="color-count"></p>
+
+    <script>
+        
+        const colors = ['red', 'orange', 'yellow', 'green', 'blue', 'purple', 'pink', 'lime', 'violet', 'gray'];
+
+
+        const colorButton = document.getElementById('color-button');
+        const colorCount = document.getElementById('color-count');
+
+        
+        colorButton.addEventListener('click', () => {
+            
+            const randomColor = colors[Math.floor(Math.random() * colors.length)];
+
+           
+            document.body.style.backgroundColor = randomColor;
+
+            
+            const colorOccurrences = {};
+            colors.forEach(color => {
+                colorOccurrences[color] = document.body.querySelectorAll(`[style="background-color: ${color};"]`).length;
+            });
+            colorCount.innerHTML = `Color count: ${randomColor} - ${colorOccurrences}`;
+        });
+    </script>
+</body>
+
+</html>

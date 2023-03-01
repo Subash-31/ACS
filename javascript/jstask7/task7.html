@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js task 7</title>
+    <style>
+        body{
+            background-color: aquamarine;
+            text-align: center;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            
+        }
+    </style>
+
+</head>
+<body>
+    <label for="rangeTo">Range from:</label>
+	<input type="number" id="rangeFrom" name="rangeFrom" min="1" max="100" required><br><br>
+
+    <label for="rangeTo">Range To:</label>
+	<input type="number" id="rangeTo" name="rangeTo" min="1" max="100" required><br><br>
+
+	<label for="divisible">Divisible by:</label>
+	<input type="number" id="divisible" name="divisible" min="1" max="100" required><br><br>
+
+	<input type="button" value="Find Numbers" onclick="findDivisibleNumbers()">
+</form>
+
+<div id="output"></div>
+
+<script>
+	function findDivisibleNumbers() {
+		var rangeFrom = parseInt(document.getElementById("rangeFrom").value);
+		var rangeTo = parseInt(document.getElementById("rangeTo").value);
+		var divisible = parseInt(document.getElementById("divisible").value);
+		var output = "";
+
+		for (var i = rangeFrom; i <= rangeTo; i++) {
+			if (i % divisible === 0) {
+				output += i + " ";
+			}
+		}
+
+		document.getElementById("output").innerHTML = "<p>Divisible numbers are: " + output + "</p>";
+	}
+</script>
+
+</body>
+</html>

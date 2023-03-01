@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Keyboard</title>
+    <style type="text/css">
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #e0e0e0;
+        }
+
+        h1 {
+            color: #303030;
+        }
+
+        table {
+            margin: auto;
+        }
+
+        td {
+            padding: 10px;
+            border: 1px solid #303030;
+            background-color: #f0f0f0;
+            cursor: pointer;
+        }
+
+        input[type="text"] {
+            padding: 10px;
+            font-size: 20px;
+            border: 1px solid #303030;
+            border-radius: 5px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Virtual Keyboard</h1>
+    <input type="text" id="text" placeholder="Click here to start typing...">
+    <table>
+        <tr>
+            <td onclick="addChar('1')">1</td>
+            <td onclick="addChar('2')">2</td>
+            <td onclick="addChar('3')">3</td>
+            <td onclick="addChar('4')">4</td>
+            <td onclick="addChar('5')">5</td>
+            <td onclick="addChar('6')">6</td>
+            <td onclick="addChar('7')">7</td>
+            <td onclick="addChar('8')">8</td>
+            <td onclick="addChar('9')">9</td>
+            <td onclick="addChar('0')">0</td>
+        </tr>
+        <tr>
+            <td onclick="addChar('q')">q</td>
+            <td onclick="addChar('w')">w</td>
+            <td onclick="addChar('e')">e</td>
+            <td onclick="addChar('r')">r</td>
+            <td onclick="addChar('t')">t</td>
+            <td onclick="addChar('y')">y</td>
+            <td onclick="addChar('u')">u</td>
+            <td onclick="addChar('i')">i</td>
+            <td onclick="addChar('o')">o</td>
+            <td onclick="addChar('p')">p</td>
+        </tr>
+        <tr>
+            <td onclick="addChar('a')">a</td>
+            <td onclick="addChar('s')">s</td>
+            <td onclick="addChar('d')">d</td>
+            <td onclick="addChar('f')">f</td>
+            <td onclick="addChar('g')">g</td>
+            <td onclick="addChar('h')">h</td>
+            <td onclick="addChar('j')">j</td>
+            <td onclick="addChar('k')">k</td>
+            <td onclick="addChar('l')">l</td>
+            <td onclick="backspace()">&#x232b;</td>
+        </tr>
+        <tr>
+            <td onclick="capsLock()">Caps Lock</td>
+            <td onclick="addChar('z')">z</td>
+            <td onclick="addChar('x')">x</td>
+            <td onclick="addChar('c')">c</td>
+            <td onclick="addChar('v')">v</td>
+            <td onclick="addChar('b')">b</td>
+            <td onclick="addChar('n')">n</td>
+            <td onclick="addChar('m')">m</td>
+        </tr>
+    </table>
+</body>
+
+</html>

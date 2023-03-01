@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Boxes with Color</title>
+	<style>
+		.box {
+			width: 100px;
+			height: 100px;
+			margin: 10px;
+            display: inline-block;
+			line-height: 100px;
+			cursor: pointer;
+		}
+		.red {
+			background-color: red;
+		}
+		.blue {
+			background-color: blue;
+		}
+		.green {
+			background-color: green;
+		}
+		.yellow {
+			background-color: yellow;
+		}
+	</style>
+</head>
+<body>
+	<div class="box red" onclick="boxClick(this)"></div>
+	<div class="box blue" onclick="boxClick(this)"></div>
+	<div class="box green" onclick="boxClick(this)"></div>
+	<div class="box yellow" onclick="boxClick(this)"></div>
+
+	<script>
+		let prevBox = null;
+
+		function boxClick(box) {
+			if (prevBox !== null) {
+				prevBox.style.display = "inline-block";
+			}
+			if (box.style.display !== "none") {
+				box.style.display = "none";
+				prevBox = box;
+			}
+		}
+	</script>
+</body>
+</html>

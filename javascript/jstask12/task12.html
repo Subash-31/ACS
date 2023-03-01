@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jatask12</title>
+    <style>
+        #box {
+  width: 200px;
+  height: 200px;
+  background-color: white;
+}
+</style>
+<script> 
+const box = document.getElementById("box");
+    const radios = document.querySelectorAll('input[type="radio"][name="color"]');
+    
+    radios.forEach((radio) => {
+      radio.addEventListener("click", (event) => {
+        box.style.backgroundColor = event.target.value;
+      });
+    });
+</script> 
+</head>
+<body>
+    <div id="box"></div>
+<form>
+  <input type="radio" name="color" value="#FF0000"> Red
+  <input type="radio" name="color" value="#00FF00"> Green
+  <input type="radio" name="color" value="#0000FF"> Blue
+  <input type="radio" name="color" value="#FFFF00"> Yellow
+  <input type="radio" name="color" value="#800080"> Purple
+  <input type="radio" name="color" value="#FFA500"> Orange
+  <input type="radio" name="color" value="#FFC0CB"> Pink
+  <input type="radio" name="color" value="#A52A2A"> Brown
+  <input type="radio" name="color" value="#808080"> Gray
+  <input type="radio" name="color" value="#000000"> Black
+</form>
+
+</body>
+</html>
